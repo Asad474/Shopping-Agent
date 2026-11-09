@@ -1,0 +1,28 @@
+[project]
+name = "shopping-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Asad", email = "asadsarfraz474@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.9",
+    "langchain-core>=1.7.6",
+    "langchain-google-genai>=4.4.3",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+shopping-agent = "shopping_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pyrefly]
+python-interpreter-path = ".venv/bin/python"
+search-path = ["src"]
+
